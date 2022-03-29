@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  margin: inherit;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #E0E0E0;
+  height: 500px;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.screen-text {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #283c46;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.screen-title {
+  font-size: 20px;
+}
+
+.screen-btn {
+  line-height: 24px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.question-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 230px;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  height: 240px;
+  padding: 10px 15px;
+
+}
+
+.question p {
+  text-align: center;
+}
+
+.question-progress-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.answers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.list-answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.list-answers > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.list-answers > div p {
+  width: 100%;
+}
+
+.list-answers > div:last-child {
+  margin-bottom: 0px;
+}
+
+.list-answers img {
+  height: 24px;
+  width: 24px;
+}
+
+/* Minor tachyons copy cat. Commonly not okay to use self describing css classes,
+but we can break the rules a little bit with this demo ;) */
+.tc {
+  text-align: center;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.b {
+  font-weight: bold;
 }

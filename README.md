@@ -1,3 +1,13 @@
+Hi there :),
+This project requires the following dependencies (apart from the default created using create-react-app):
+1. he -> npm install he.
+OR simply run 'npm install' before 'npm start' to install all the necessary dependencies specified in the package.json file.
+
+For quick review, gently go to the uploaded version on netlify:
+https://g2i-cedano.netlify.app
+
+Thank you and I hope you pass all the tests!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
